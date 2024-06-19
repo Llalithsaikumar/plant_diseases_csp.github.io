@@ -48,4 +48,4 @@ To run this project locally, follow these steps:
 - Create a new Pull Request.
 
 ## License
-**This project is licensed under the MIT License.**
+**This project is licensed under the [MIT License](https://github.com/Llalithsaikumar/plant_diseases_csp.github.io/blob/main/LICENSE).**
