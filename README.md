@@ -47,3 +47,5 @@ To run this project locally, follow these steps:
 - Push to the branch (git push origin feature/your-feature).
 - Create a new Pull Request.
 
+## License
+**This project is licensed under the MIT License.**
