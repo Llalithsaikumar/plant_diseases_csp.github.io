@@ -38,3 +38,12 @@ To run this project locally, follow these steps:
 - Daily Reports: View daily reports categorized by date.
 - Participants: Profiles of project participants.
 - Department: Details about the Botany Department and project mentorship.
+
+## Contributing
+**Contributions are welcome! If you would like to contribute to this project, please follow these guidelines:**
+
+- Fork the repository and create your branch (git checkout -b feature/your-feature).
+- Commit your changes (git commit -am 'Add some feature').
+- Push to the branch (git push origin feature/your-feature).
+- Create a new Pull Request.
+
