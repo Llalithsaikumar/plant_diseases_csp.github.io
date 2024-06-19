@@ -31,3 +31,10 @@ To run this project locally, follow these steps:
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/your-username/plant-diseases-project.git
+
+## Usage
+- Explore different sections of the project using the navigation menu:
+- Home: Overview and introduction to the project.
+- Daily Reports: View daily reports categorized by date.
+- Participants: Profiles of project participants.
+- Department: Details about the Botany Department and project mentorship.
