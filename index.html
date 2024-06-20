@@ -3,49 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Service Project</title>
+    <title>Home - Plant Diseases Project</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Plant Diseases - Community Service Project</h1>
+    <header id="landing-page">
+        <h1>Welcome to Plant Diseases Project</h1>
+        <p>Explore our project on identifying and documenting plant diseases.</p>
+        <a href="daily-reports.html" class="btn">Explore Daily Reports</a>
     </header>
     <nav>
         <div class="navbar">
-            <a href="../index.html#landing-page">Home</a>
-            <a href="../daily-reports.html#daily-reports">Daily Reports</a>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Daily Reports</button>
+                <div class="dropdown-content">
+                    <div class="row">
+                        <div class="column">
+                            <h3>May 2024</h3>
+                            <a href="daily-reports/report-2024-05-14.html">May 14, 2024</a>
+                            <a href="daily-reports/report-2024-05-15.html">May 15, 2024</a>
+                            <!-- Add more dates as needed -->
+                        </div>
+                        <div class="column">
+                            <h3>June 2024</h3>
+                            <a href="daily-reports/report-2024-06-01.html">June 1, 2024</a>
+                            <!-- Add more dates as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="dropdown">
                 <button class="dropbtn">Participants</button>
-                <div class="dropdown-content" id="participants-dropdown">
+                <div class="dropdown-content">
                     <a href="participants/participant-1.html">John Doe</a>
                     <a href="participants/participant-2.html">Jane Smith</a>
-                    <a href="participants/participant-3.html">Alice Johnson</a>
-                    <!-- Add more as needed -->
+                    <!-- Add more participants as needed -->
                 </div>
             </div>
             <a href="department.html">Department</a>
         </div>
     </nav>
     <div class="container">
-        <section id="landing-page">
-            <h2>Welcome to Plant Diseases Community Service Project</h2>
-            <p>Explore our project dedicated to studying various plant diseases affecting local vegetation. We document symptoms, identify causes, and suggest preventive measures to mitigate plant diseases.</p>
-            <div class="image-container">
-                <img src="photos/disease_example_1.jpg" alt="Plant Disease Example 1">
-                <p class="image-caption">Yellowing of leaves due to nutrient deficiency.</p>
-            </div>
-            <div class="image-container">
-                <img src="photos/disease_example_2.jpg" alt="Plant Disease Example 2">
-                <p class="image-caption">Black spots on tomato stems caused by fungal infection.</p>
-            </div>
-            <div class="image-container">
-                <img src="photos/disease_example_3.jpg" alt="Plant Disease Example 3">
-                <p class="image-caption">Wilting and yellowing of bean plant leaves from bacterial wilt.</p>
-            </div>
-            <!-- Add more image containers with explanations as needed -->
-
-
+        <section id="project-summary">
+            <h2>Project Summary</h2>
+            <p>Include a brief summary of the project here.</p>
+            <!-- Add project summary content -->
         </section>
     </div>
     <footer>

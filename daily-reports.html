@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Reports</title>
+    <title>Daily Reports - Plant Diseases Project</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
@@ -14,13 +13,29 @@
     <nav>
         <div class="navbar">
             <a href="index.html">Home</a>
-            <a href="daily-reports.html">Daily Reports</a>
+            <div class="dropdown">
+                <button class="dropbtn">Daily Reports</button>
+                <div class="dropdown-content">
+                    <div class="row">
+                        <div class="column">
+                            <h3>May 2024</h3>
+                            <a href="daily-reports/report-2024-05-14.html">May 14, 2024</a>
+                            <a href="daily-reports/report-2024-05-15.html">May 15, 2024</a>
+                            <!-- Add more dates as needed -->
+                        </div>
+                        <div class="column">
+                            <h3>June 2024</h3>
+                            <a href="daily-reports/report-2024-06-01.html">June 1, 2024</a>
+                            <!-- Add more dates as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="dropdown">
                 <button class="dropbtn">Participants</button>
                 <div class="dropdown-content">
                     <a href="participants/participant-1.html">John Doe</a>
                     <a href="participants/participant-2.html">Jane Smith</a>
-                    <a href="participants/participant-3.html">Alice Johnson</a>
                     <!-- Add more participants as needed -->
                 </div>
             </div>
@@ -29,21 +44,13 @@
     </nav>
     <div class="container">
         <section id="daily-reports">
-            <h2>Daily Reports</h2>
-            <h3>May 2024</h3>
-            <ul>
-                <li><a href="daily-reports/report-2024-05-14.html">May 14, 2024</a></li>
-                <li><a href="daily-reports/report-2024-05-15.html">May 15, 2024</a></li>
-                <li><a href="daily-reports/report-2024-05-16.html">May 16, 2024</a></li>
-                <!-- Add more as needed -->
-            </ul>
-            <h3>June 2024</h3>
-            <ul>
-                <li><a href="daily-reports/report-2024-06-01.html">June 01, 2024</a></li>
-                <li><a href="daily-reports/report-2024-06-02.html">June 02, 2024</a></li>
-                <!-- Add more as needed -->
-            </ul>
-            <!-- Add more months and reports as needed -->
+            <h2>Select a Date for Daily Report</h2>
+            <div class="date-buttons">
+                <a href="daily-reports/report-2024-05-14.html" class="date-button">May 14, 2024</a>
+                <a href="daily-reports/report-2024-05-15.html" class="date-button">May 15, 2024</a>
+                <a href="daily-reports/report-2024-06-01.html" class="date-button">June 1, 2024</a>
+                <!-- Add more date buttons as needed -->
+            </div>
         </section>
     </div>
     <footer>

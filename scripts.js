@@ -43,3 +43,25 @@ document.addEventListener('DOMContentLoaded', function() {
         link.setAttribute('rel', 'noopener noreferrer');
     });
 });
+// Add any JavaScript functionality here
+
+// Example: Alert message for Explore button
+document.addEventListener('DOMContentLoaded', function() {
+    const exploreButton = document.querySelector('.btn');
+    if (exploreButton) {
+        exploreButton.addEventListener('click', function() {
+            window.location.href = "daily-reports.html";
+        });
+    }
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const dateButtons = document.querySelectorAll('.date-button');
+
+    dateButtons.forEach(button => {
+        button.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default action of anchor tag
+            const link = this.getAttribute('href');
+            window.location.href = link; // Redirect to the selected daily report
+        });
+    });
+});

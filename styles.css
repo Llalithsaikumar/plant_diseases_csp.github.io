@@ -1,126 +1,228 @@
-/* Updated styles for enhanced appeal */
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
-    color: #333;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    color: #E5E7EB;
 }
 
-header, footer {
-    background-color: #333;
-    color: white;
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 0;
+    color: #E5E7EB;
+    animation: fadeIn 2s ease-in-out;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+.btn {
+    background-color: #1A202C;
+    border: none;
+    color: #E5E7EB;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #2D3748;
+}
+
+/* Navbar container */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #1A202C;
     font-family: Arial;
+    border-bottom: 3px solid #000851; /* Dark blue border at the bottom */
 }
 
+/* Links inside the navbar */
 .navbar a {
     float: left;
-    display: block;
-    color: white;
+    font-size: 16px;
+    color: #E5E7EB;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
+/* The dropdown container */
 .dropdown {
     float: left;
     overflow: hidden;
 }
 
+/* Dropdown button */
 .dropdown .dropbtn {
     font-size: 16px;
     border: none;
     outline: none;
-    color: white;
+    color: #E5E7EB;
     padding: 14px 16px;
     background-color: inherit;
-    font: inherit;
-    margin: 0;
+    font: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
 }
 
+/* Add a blue background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #2D3748;
+}
+
+/* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+    background-color: #1A202C;
+    width: 100%;
+    left: 0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    transition: display 0.3s ease;
 }
 
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+/* Mega Menu header, if needed */
+.dropdown-content .header {
+    background: #2D3748;
+    padding: 16px;
+    color: #E5E7EB;
 }
 
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
+/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color: #1A202C;
+    height: 250px;
 }
 
-.report, .participant-details, .department-details {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-}
-
-.image-container {
-    margin-bottom: 20px;
-}
-
-.image-container img {
-    width: 100%;
-    height: auto;
-}
-
-.image-caption {
-    font-style: italic;
-    margin-top: 10px;
-}
-
-/* Button styles */
-.btn {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
+/* Style links inside the columns */
+.column a {
+    float: none;
+    color: #E5E7EB;
+    padding: 16px;
     text-decoration: none;
-    font-size: 16px;
-    margin: 10px 0;
-    cursor: pointer;
+    display: block;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+/* Add a background color on hover */
+.column a:hover {
+    background-color: #2D3748;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Section Styling */
+section {
+    background-color: #2D3748;
+    color: #E5E7EB;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Footer */
+footer {
+    background-color: #1A202C;
+    color: #E5E7EB;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 3px solid #000851; /* Dark blue border at the top */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Date Buttons */
+.date-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.date-button {
+    display: inline-block;
+    background-color: #1A202C;
+    color: #E5E7EB;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #45a049;
+.date-button:hover {
+    background-color: #2D3748;
 }
 
-/* Responsive layout */
-@media (max-width: 768px) {
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
     .container {
-        width: 90%;
+        width: 90%; /* Adjust container width for smaller screens */
+    }
+
+    .navbar a {
+        padding: 10px; /* Reduce padding for navbar links */
+    }
+
+    .dropdown-content {
+        width: 200px; /* Adjust dropdown width for smaller screens */
+    }
+
+    .column {
+        width: 100%; /* Make columns full width for smaller screens */
+    }
+
+    .btn {
+        padding: 8px 16px; /* Adjust button padding for smaller screens */
+    }
+
+    header h1 {
+        font-size: 2em; /* Decrease header font size for smaller screens */
     }
 }
