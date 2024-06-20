@@ -162,6 +162,10 @@ section {
 
 /* Footer */
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: #1A202C;
     color: #E5E7EB;
     text-align: center;
