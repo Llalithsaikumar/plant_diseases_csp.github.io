@@ -54,7 +54,8 @@ header p {
 
 /* Navbar container */
 .navbar {
-    overflow: hidden;
+    width: 100%;
+    overflow: auto;
     background-color: #1A202C;
     font-family: Arial;
     border-bottom: 3px solid #000851; /* Dark blue border at the bottom */
@@ -66,7 +67,8 @@ header p {
     font-size: 16px;
     color: #E5E7EB;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px;
+    width: 25%; /* Four equal-width links */
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
@@ -103,7 +105,6 @@ header p {
     left: 0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    transition: display 0.3s ease;
 }
 
 /* Mega Menu header, if needed */
@@ -118,7 +119,7 @@ header p {
     display: block;
 }
 
-/* Create three equal columns that floats next to each other */
+/* Create three equal columns that float next to each other */
 .column {
     float: left;
     width: 33.33%;
@@ -204,6 +205,16 @@ footer {
     background-color: #2D3748;
 }
 
+/* Responsive Image */
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
+    max-height: 400px; /* Limit the maximum height */
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
     .container {
@@ -211,11 +222,11 @@ footer {
     }
 
     .navbar a {
-        padding: 10px; /* Reduce padding for navbar links */
+        padding: 12px; /* Reduce padding for navbar links */
     }
 
     .dropdown-content {
-        width: 200px; /* Adjust dropdown width for smaller screens */
+        width: 100%; /* Adjust dropdown width for smaller screens */
     }
 
     .column {
@@ -228,5 +239,18 @@ footer {
 
     header h1 {
         font-size: 2em; /* Decrease header font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left; /* Align text to the left on small screens */
+    }
+
+    .dropdown-content {
+        width: 100%; /* Ensure dropdown content also fits */
     }
 }
