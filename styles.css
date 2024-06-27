@@ -213,6 +213,24 @@ footer {
     margin: 0 auto; /* Center the image */
     max-height: 400px; /* Limit the maximum height */
     object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 15px; /* Add rounded corners */
+}
+
+/* Scrollable Image Gallery */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+    gap: 20px; /* Add some space between images */
+}
+
+.scroll-container img {
+    flex-shrink: 0;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Add a subtle shadow for better visualization */
 }
 
 /* Responsive Design */
